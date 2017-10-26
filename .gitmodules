@@ -1,3 +1,4 @@
 [submodule "resources/bin"]
 	path = resources/bin
 	url = https://github.com/keyos1/quasar-binaries
+	branch = develop
