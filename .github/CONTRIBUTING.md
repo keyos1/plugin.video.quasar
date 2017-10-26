@@ -84,11 +84,11 @@ included in the project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/scakemyer/plugin.video.quasar.git
+   git clone https://github.com/keyos1/plugin.video.quasar.git
    # Navigate to the newly cloned directory
    cd plugin.video.quasar
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/scakemyer/plugin.video.quasar.git
+   git remote add upstream https://github.com/keyos1/plugin.video.quasar.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:

@@ -1,6 +1,6 @@
 ![](http://i.imgur.com/4eQhijh.png)
 
-[![Build Status](https://travis-ci.org/scakemyer/plugin.video.quasar.svg?branch=master)](https://travis-ci.org/scakemyer/plugin.video.quasar)
+[![Build Status](https://travis-ci.org/keyos1/plugin.video.quasar.svg?branch=master)](https://travis-ci.org/keyos1/plugin.video.quasar)
 [![Join the chat at https://gitter.im/QuasarHQ/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/QuasarHQ/Lobby)
 [![Bountysource](https://www.bountysource.com/badge/team?team_id=133972&style=bounties_received)](https://www.bountysource.com/teams/plugin.video.quasar)
 
@@ -23,7 +23,7 @@ Minimum supported Kodi version: 16 (Jarvis)
 
 Download
 --------
-See the [Releases](https://github.com/scakemyer/plugin.video.quasar/releases) page. **Do NOT use the `Download ZIP` button on this page.**
+See the [Releases](https://github.com/keyos1/plugin.video.quasar/releases) page. **Do NOT use the `Download ZIP` button on this page.**
 
 
 Installation
@@ -38,20 +38,20 @@ The entire build process of Quasar is automated using Travis CI, and that's a
 good thing because it's quite a complicated one with many dependencies and
 repositories. Here's the stack from top to bottom:
 
-- [quasar](https://github.com/scakemyer/quasar) - The Quasar daemon itself, built on top of the cross-compiled libtorrent-go
+- [quasar](https://github.com/keyos1/quasar) - The Quasar daemon itself, built on top of the cross-compiled libtorrent-go
 - [libtorrent-go](https://github.com/scakemyer/libtorrent-go) - The libtorrent library with Go bindings, built using cross-compiler
 - [cross-compiler](https://github.com/scakemyer/cross-compiler) - Builds the base images to, you guessed it, cross-compile Quasar
 
 #### Build status of each project
 | quasar daemon | libtorrent-go | cross-compiler |
 | ------------- | ------------- | -------------- |
-| [![Build Status](https://travis-ci.org/scakemyer/quasar.svg?branch=master)](https://travis-ci.org/scakemyer/quasar) | [![Build Status](https://travis-ci.org/scakemyer/libtorrent-go.svg?branch=master)](https://travis-ci.org/scakemyer/libtorrent-go) | [![Build Status](https://travis-ci.org/scakemyer/cross-compiler.svg?branch=master)](https://travis-ci.org/scakemyer/cross-compiler) |
+| [![Build Status](https://travis-ci.org/keyos1/quasar.svg?branch=master)](https://travis-ci.org/keyos1/quasar) | [![Build Status](https://travis-ci.org/scakemyer/libtorrent-go.svg?branch=master)](https://travis-ci.org/scakemyer/libtorrent-go) | [![Build Status](https://travis-ci.org/scakemyer/cross-compiler.svg?branch=master)](https://travis-ci.org/scakemyer/cross-compiler) |
 
 There are different ways to build the Quasar daemon. You can either pull the different Docker images or build it all yourself. If you want to go for the latter, start by building the cross-compiler images, then libtorrent-go, and come back to Quasar afterwards. There should be enough info in each of the projects to get you started, but you'll obviously have to dive into the code at some point.
 
-Since the whole build process is now automated, this repository is using [pre-built binaries](https://github.com/scakemyer/quasar-binaries) from the last Quasar daemon build as a submodule. Here's how you'd build this add-on using those:
+Since the whole build process is now automated, this repository is using [pre-built binaries](https://github.com/keyos1/quasar-binaries) from the last Quasar daemon build as a submodule. Here's how you'd build this add-on using those:
 ```
-git clone https://github.com/scakemyer/plugin.video.quasar
+git clone https://github.com/keyos1/plugin.video.quasar
 cd plugin.video.quasar
 git submodule update --init
 make
@@ -99,7 +99,7 @@ FAQ
 Spread the word. Talk about it with your friends, show them, make videos, tutorials. Talk about it on social networks, blogs, etc...
 
 ##### The plugin doesn't work, what can I do?
-Please search currently [open and closed issues](https://github.com/scakemyer/plugin.video.quasar/issues) to see if it has already been reported and/or fixed. If not then add a new issue with a short but descriptive title, a detailed description and of course a link to the logs. If you don't know how to do that, just follow the guide at: [http://kodi.wiki/view/Log_file/Easy](http://kodi.wiki/view/Log_file/Easy). If you actually went through the logs and know the relevant part, you can instead paste that, as long as it's shorter than a hundred lines or so, and please enclose it in triple back-quotes for readability.
+Please search currently [open and closed issues](https://github.com/keyos1/plugin.video.quasar/issues) to see if it has already been reported and/or fixed. If not then add a new issue with a short but descriptive title, a detailed description and of course a link to the logs. If you don't know how to do that, just follow the guide at: [http://kodi.wiki/view/Log_file/Easy](http://kodi.wiki/view/Log_file/Easy). If you actually went through the logs and know the relevant part, you can instead paste that, as long as it's shorter than a hundred lines or so, and please enclose it in triple back-quotes for readability.
 
 ##### Can I seek in a video?
 Yes, but it can fail.
@@ -122,8 +122,8 @@ Sorry, I won't comment of specific providers.
 
 Screenshots
 -----------
-![](https://raw.githubusercontent.com/scakemyer/plugin.video.quasar/master/resources/screenshots/home.jpg)
+![](https://raw.githubusercontent.com/keyos1/plugin.video.quasar/master/resources/screenshots/home.jpg)
 
-![](https://raw.githubusercontent.com/scakemyer/plugin.video.quasar/master/resources/screenshots/movies.jpg)
+![](https://raw.githubusercontent.com/keyos1/plugin.video.quasar/master/resources/screenshots/movies.jpg)
 
-![](https://raw.githubusercontent.com/scakemyer/plugin.video.quasar/master/resources/screenshots/webui.png)
+![](https://raw.githubusercontent.com/keyos1/plugin.video.quasar/master/resources/screenshots/webui.png)
